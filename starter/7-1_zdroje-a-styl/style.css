@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: aliceblue;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  gap: 2rem;
+}

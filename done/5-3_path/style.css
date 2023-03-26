@@ -1,0 +1,64 @@
+.btn {
+  padding: 1rem 2.5rem;
+  border-width: 0;
+  font-size: 1.5rem;
+  position: relative;
+  background-color: transparent;
+}
+
+.outline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: transparent;
+  stroke: rebeccapurple;
+  stroke-width: 10px;
+}
+
+.outline-shape {
+  transition: all .5s;
+  stroke-dasharray: 200 300;
+  stroke-dashoffset: 250;
+}
+
+.btn:hover .outline-shape {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 0;
+}
+
+.logo {
+  fill: none;
+  stroke-width: 4;
+  stroke: green;
+  transition: all 2s;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: draw linear 3s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.mapa {
+  fill: none;
+  stroke-width: 4;
+  stroke: grey;
+}
+
+.mapa-cz {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  animation: draw linear 3s forwards;
+  stroke: red;
+}
+
+.mapa-sk {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  animation: draw linear 3s forwards;
+  stroke: blue;
+}

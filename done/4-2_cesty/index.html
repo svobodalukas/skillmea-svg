@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>4.2 Path</title>
+    <link href="../style-common.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <svg width="500" height="500" class="canvas">
+      <path d="M50,50 L450,450 M450,50 L50,450" stroke="red" stroke-width="10"></path>
+    </svg>
+
+    <hr>
+
+    <svg width="500" height="500" class="canvas">
+      <path d="M50,200 L250,200 250,100 400,250 250,400 250,300 50,300Z"></path>
+    </svg>
+
+    <svg width="500" height="500" class="canvas">
+      <path d="M50,200 h200 v-100 l150,150 l-150,150 v-100 h-200z"></path>
+    </svg>
+    <!-- 
+    Možnosti:
+      M/m = move to
+      L/l = line to
+      H/h = horizontal line to
+      V/v = vertical line to
+      C/c = curve to
+      S/s = smooth curve to
+      Q/q = quadratic Bézier curve
+      T/t = smooth quadratic Bézier curve to
+      A/a = elliptical Arc
+      Z = close path 
+
+      Zdroje:
+      https://svg-path-visualizer.netlify.app/
+      https://yqnn.github.io/svg-path-editor/
+
+      Další čtení:
+      https://css-tricks.com/svg-path-syntax-illustrated-guide/
+    -->
+
+  </body>
+</html>

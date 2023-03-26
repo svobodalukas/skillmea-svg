@@ -1,0 +1,34 @@
+.icon {
+  background: #eee;
+  margin: 2rem;
+}
+
+.menu > rect {
+  transition: all .4s;
+}
+
+.menu:hover .middle {
+  transform: translateX(-48px);
+}
+
+.menu:hover .top {
+  transform: rotate(45deg);
+  transform-box: fill-box;
+  transform-origin: left top;
+  x: 12;
+}
+
+.menu:hover .bottom {
+  transform: rotate(-45deg);
+  transform-box: fill-box;
+  transform-origin: left bottom;
+  x: 12;
+}
+
+.add path {
+  transition: .4s;
+}
+
+.add:hover path {
+  d: path("M24,4 L24,44 M4,24 L44,24");
+}

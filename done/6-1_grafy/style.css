@@ -1,0 +1,18 @@
+.row {
+  fill: gray;
+}
+
+.row .value {
+  fill: blue;
+  transform: scaleX(0);
+  transition: all .3s;
+}
+
+.row:hover .value {
+  transform: scaleX(1);
+}
+
+.row:hover text {
+  fill: blue;
+}
+

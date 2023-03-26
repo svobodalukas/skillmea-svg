@@ -1,0 +1,44 @@
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  border-width: 0;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rebeccapurple;
+  color: white;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.btn .close {
+  transition: transform ease-in-out .2s, fill linear .2s;
+}
+
+.btn:hover .close {
+  transform: rotate(45deg) scale(1.5);
+  fill: yellow;
+}
+
+#sun {
+  animation: sunAnimation 5s linear infinite alternate;
+}
+
+@keyframes sunAnimation {
+  0% {
+    fill: yellow;
+    transform: translate(0);
+  }
+
+  50% {
+    fill: red;
+    transform: translate(325px,-165px) scale(1.5);
+  }
+
+  100% {
+    fill: orange;
+    transform: translate(650px,0);
+  }
+  
+}

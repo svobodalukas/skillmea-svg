@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightblue;
+}
+
+.header-title {
+  font-weight: bold;
+  font-family: 'Climate Crisis', cursive;
+  font-size: 1.5rem;
+  color: darkblue;
+}
+
+.header-tools {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin: 0 0 1rem;
+}
+
+.card-subtitle {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0 0 3rem;
+}
+
+.star-fill {
+  fill: red;
+  width: 2rem;
+}
+
+.star-empty {
+  fill: transparent;
+  stroke: yellow;
+  stroke-width: 48;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  color: white;
+  fill: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0.25rem;
+  border-width: 0;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>6.1 Grafy</title>
+    <link href="../style-common.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <svg width="500" height="250" style="border-left: 2px solid blue;">
+      
+      <g class="row">
+        <rect x="0" y="25" height="50" width="35%"></rect>
+        <rect x="0" y="25" height="50" width="35%" class="value"></rect>
+        <text x="37%" y="50">iOS</text>
+      </g>
+
+      <g class="row">
+        <rect x="0" y="100" height="50" width="45%"></rect>
+        <rect x="0" y="100" height="50" width="45%" class="value"></rect>
+        <text x="47%" y="125">Android</text>
+      </g>
+
+      <g class="row">
+        <rect x="0" y="175" height="50" width="20%"></rect>
+        <rect x="0" y="175" height="50" width="20%" class="value"></rect>
+        <text x="22%" y="200">other</text>
+      </g>
+    </svg>
+
+    <hr>
+
+    <svg width="500" height="250" fill="#eee" style="border-left: 2px solid blue; border-bottom: 2px solid blue;">
+      <polyline points="50,35 150,150 200,99 250,160 300,120" stroke="red" stroke-width="5" fill="none"></polyline>
+    </svg>
+    
+  </body>
+</html>

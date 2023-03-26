@@ -1,0 +1,67 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: aliceblue;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  gap: 2rem;
+}
+
+.size-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size-md {
+  width: 2rem;
+  height: 2rem;
+}
+
+.size-lg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon-wrap {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: darkblue;
+}
+
+
+.sun {
+  fill: yellow;
+  animation: sunAnimation linear 3s alternate infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .sun {
+    animation: none;
+  }
+}
+
+@keyframes sunAnimation {
+  0% {
+    fill: yellow;
+    transform: translate(0);
+  }
+
+  50% {
+    fill: red;
+    transform: translate(325px,-165px) scale(1.5);
+  }
+
+  100% {
+    fill: orange;
+    transform: translate(650px,0);
+  }
+}
